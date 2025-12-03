@@ -1,0 +1,121 @@
+* {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13pt;
+}
+
+input[type="button"] {
+    border: 2px solid #00ffc080;
+    border-radius: 8px;
+    background-color: #00ffc020;
+}
+input[type="button"]:hover {
+    border-color: #00ffc0c0;
+    background-color: #00ffc040;
+}
+input[type="button"]:active {
+    border-color: #00ffc0ff;
+    background-color: #00ffc080;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 10px;
+}
+.calendar-header > * {
+    font-weight: bold;
+    color: #006048;
+}
+.calendar-header > #calendar-prev-button {
+    border-radius: 50%;
+    width: 1.9rem;
+    height: 1.9rem;
+}
+.calendar-header > #calendar-label {
+    margin: 0 3px;
+}
+.calendar-header > #calendar-next-button {
+    border-radius: 50%;
+    width: 1.9rem;
+    height: 1.9rem;
+}
+.calendar-header > #calendar-today-button {
+    height: 1.9rem;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 2.5rem repeat(calc(6*4), 1fr);
+    column-gap: 3px;
+    row-gap: 3px;
+}
+.calendar-grid > div {
+    display: contents;
+}
+.calendar-grid > div > div {
+    display: flex;
+    padding: 3px;
+}
+
+.calendar-cellgroup-dayofweeks > div {
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.calendar-cellgroup-dayofweeks > .calendar-cell-sunday {
+    background-color: #f0a0a0;
+}
+.calendar-cellgroup-dayofweeks > .calendar-cell-weekday {
+    background-color: #d0d0d0;
+}
+.calendar-cellgroup-dayofweeks > .calendar-cell-saturday {
+    background-color: #a0f0f0;
+}
+
+.calendar-cellgroup-days > div {
+    justify-content: right;
+    align-items: start;
+    border: 3px solid transparent;
+}
+.calendar-cellgroup-days > .calendar-cell-sunday {
+    background-color: #f0a0a060;
+}
+.calendar-cellgroup-days > .calendar-cell-weekday {
+    background-color: #d0d0d060;
+}
+.calendar-cellgroup-days > .calendar-cell-saturday {
+    background-color: #a0f0f060;
+}
+.calendar-cellgroup-days > .calendar-cell-today {
+    border-image: conic-gradient(from -45deg,
+        #00a000,
+        #00ff00,
+        #00a000,
+        #00ff00,
+        #00a000
+    ) 1;
+}
+.calendar-cellgroup-days > .calendar-cell-sunday:hover {
+    background-color: #f0a0a0c0;
+}
+.calendar-cellgroup-days > .calendar-cell-weekday:hover {
+    background-color: #d0d0d0c0;
+}
+.calendar-cellgroup-days > .calendar-cell-saturday:hover {
+    background-color: #a0f0f0c0;
+}
+.calendar-cellgroup-days > .calendar-cell-sunday:active {
+    background-color: #f0a0a0;
+}
+.calendar-cellgroup-days > .calendar-cell-weekday:active {
+    background-color: #d0d0d0;
+}
+.calendar-cellgroup-days > .calendar-cell-saturday:active {
+    background-color: #a0f0f0;
+}
+
+.calendar-cellgroup-events > div {
+}
