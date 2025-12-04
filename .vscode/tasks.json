@@ -29,7 +29,7 @@
       "args": [
         "build",
         "-tags",
-        "production,desktop",
+        "production,desktop,webkit2_41",
         "-gcflags",
         "all=-N -l",
         "-o",
@@ -64,7 +64,7 @@
       "args": [
         "build",
         "-tags",
-        "production,desktop,debug",
+        "production,desktop,debug,webkit2_41",
         "-gcflags",
         "all=-N -l",
         "-o",
@@ -99,7 +99,7 @@
       "args": [
         "build",
         "-tags",
-        "dev",
+        "dev,webkit2_41",
         "-gcflags",
         "all=-N -l",
         "-o",
