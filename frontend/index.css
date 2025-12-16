@@ -1,5 +1,5 @@
 * {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-size: 13pt;
 }
 
@@ -48,7 +48,7 @@ input[type="button"]:active {
 .calendar-grid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 2.5rem repeat(calc(6*4), 1fr);
+    grid-template-rows: 2.5rem repeat(6, 5rem);
     column-gap: 3px;
     row-gap: 3px;
 }
@@ -115,7 +115,4 @@ input[type="button"]:active {
 }
 .calendar-cellgroup-days > .calendar-cell-saturday:active {
     background-color: #a0f0f0;
-}
-
-.calendar-cellgroup-events > div {
 }
